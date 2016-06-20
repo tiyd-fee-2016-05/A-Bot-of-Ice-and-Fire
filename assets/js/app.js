@@ -12,7 +12,17 @@ $('.talktoBot').on('submit', function (e) {
 console.log("You typed " + commands[0])
 
 if (commandtext == "@help") {
-  console.log("Tyrion can help.")};
+  console.log("Tyrion can help.")
+
+
+  $(".tyrionEntry").append('<li class="response">' + "How can I help?"+ '</li>')
+
+
+
+
+
+};
+
 
 var list = $(".commandList")
 
