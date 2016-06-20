@@ -1,7 +1,7 @@
 console.log("Ready to go!");
 
 $('.talktoBot').on('submit', function (e) {
-  e.preventDefault();
+  e.preventDefault()
   console.log("You submitted this thing.")
   var commandtext = $('input[class="command"]').val();
   // console.log(commandtext);
@@ -12,7 +12,7 @@ console.log("You typed " + commands[0]);
 
 var list = $(".commandList")
 
-$(".chatWindowentry").append('<li>' + commandtext + '</li>')
+$(".chatWindowentry").append('<li class="userCommands">' + commandtext + '</li>')
 
 
 
