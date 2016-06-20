@@ -1,0 +1,24 @@
+{
+  "name": "responsive-icon-grid",
+  "homepage": "https://github.com/sinovia/responsive-icon-grid",
+  "authors": [
+    "SINOVIA <somayfield@gmail.com>"
+  ],
+  "description": "Responsive Icon Grid Blueprint",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "font-awesome": "^4.6.3",
+    "susy": "^2.2.12",
+    "meyer-reset": "*",
+    "animate.css": "^3.5.2"
+  }
+}
