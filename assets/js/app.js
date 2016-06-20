@@ -9,11 +9,10 @@ $('.talktoBot').on('submit', function (e) {
   var commands = [];
       commands.push(commandtext)
 
-console.log("You typed " + commands[0]);
+console.log("You typed " + commands[0])
 
-if ($(".userCommands")[0].innerHTML === "@help"){
-  console.log("Tyrion can help.");
-  };
+if (commandtext == "@help") {
+  console.log("Tyrion can help.")};
 
 var list = $(".commandList")
 
@@ -21,10 +20,6 @@ $(".chatWindowentry").append('<li class="userCommands">' + commandtext + '</li>'
 });
 
 var commandtext = $('input[class="command"]').val();
-
-
-
-
 
 
 
