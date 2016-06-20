@@ -2,17 +2,25 @@ console.log("Ready to go!");
 
 $('.talktoBot').on('submit', function (e) {
   e.preventDefault()
-  console.log("You submitted this thing.")
+
   var commandtext = $('input[class="command"]').val();
+    console.log("The user submitted" + commandtext)
   // console.log(commandtext);
   var commands = [];
       commands.push(commandtext)
 
 console.log("You typed " + commands[0]);
 
+if ($(".userCommands")[0].innerHTML === "@help"){
+  console.log("Tyrion can help.");
+  };
+
 var list = $(".commandList")
 
 $(".chatWindowentry").append('<li class="userCommands">' + commandtext + '</li>')
+});
+
+var commandtext = $('input[class="command"]').val();
 
 
 
@@ -20,31 +28,4 @@ $(".chatWindowentry").append('<li class="userCommands">' + commandtext + '</li>'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  });
+// $(".tyrionEntry").append('<li class="userCommands">' + commandtext + '</li>')
