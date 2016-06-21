@@ -1,3 +1,4 @@
+
 //Giphy Ajax Call
 $('.talktoBot').on('submit', function (e) {
   e.preventDefault()//KEEPS FROM REFRESHING

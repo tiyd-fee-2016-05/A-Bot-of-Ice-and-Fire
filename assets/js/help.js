@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Help Command
 
 //WHEN USER SUBMITS FORM//
@@ -12,6 +13,20 @@ $('.talktoBot').on('submit', function (e) {
       commands.push(commandtext)//PUT THE INPUT CONTENT INTO THIS ARRAY
 
 console.log("You typed " + commands[0])//TELLS US WHAT FIRST <LI> IS BEING READ
+
+console.log("Help ready.");
+
+$('.talktoBot').on('submit', function (e) {
+  e.preventDefault()
+
+  var commandtext = $('input[class="command"]').val();
+    console.log("The user submitted" + commandtext)
+  // console.log(commandtext);
+  var commands = [];
+      commands.push(commandtext)
+
+console.log("You typed " + commands[0])
+
 
 if (commandtext == "@help") {
   console.log("Tyrion can help.")
