@@ -1,4 +1,53 @@
 console.log("Spotify ready.");
+
+$('.talktoBot').on('submit', function (e) {
+  e.preventDefault()
+
+  var commandtext = $('input[class="command"]').val();
+    console.log("The user submitted" + commandtext)
+  // console.log(commandtext);
+  var commands = [];
+      commands.push(commandtext)
+
+console.log("You typed " + commands[0])
+
+if (commandtext === "@songoficeandfire") {
+  console.log("Let's play a song.")
+
+  $(".tyrionEntry").append('<li class="response">' + "Music is dope."+ '</li>')
+}
+
+console.log ("I am searching " + commands+ " on Spotify.")
+$.ajax({
+      dataType: 'json',
+      url: "https://api.spotify.com/v1/users/gameofthrones",
+      method: "GET",
+
+    }).done(function(json) {
+
+            var imageURL = "http://i.imgur.com/xQHMk98.jpg"
+        $(".tyrionEntry").append(
+                                        '<li class="response">' + "<img class ='image' src='" + imageURL + "'/>" +
+
+                                        "</li>"
+
+
+      );
+
+      console.log(json);
+    });
+
+
+
+
+
+
+
+
+});
+
+
+
 // $(function(){
 //   'use strict';
 //   var search
