@@ -1,4 +1,4 @@
-console.log("Ready to go!");
+console.log("Commands ready.");
 
 $('.talktoBot').on('submit', function (e) {
   e.preventDefault()
@@ -16,20 +16,20 @@ if (commandtext == "@help") {
 
 
   $(".tyrionEntry").append('<li class="response">' + "How can I help?"+ '</li>')
-
-
-
-
-
 };
+
+if (commandtext == "@background") {
+  $(".tyrionEntry").append('<li class="response">' + "What color would you like?"+ '</li>')
+              };
+
+
+
 
 
 var list = $(".commandList")
 
 $(".chatWindowentry").append('<li class="userCommands">' + commandtext + '</li>')
 });
-
-var commandtext = $('input[class="command"]').val();
 
 
 

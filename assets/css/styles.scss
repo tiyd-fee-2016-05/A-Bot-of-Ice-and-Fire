@@ -1,3 +1,29 @@
 body {
-  background-color: purple;
+  background-color: black;
+}
+
+
+ul {
+  list-style: none
+}
+
+.ScreenWindow {
+  width: 30%;
+  background-image: url("http://i.imgur.com/mZvlSGd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: 30% 75%;
+    height: 850px;
+    overflow: auto;
+}
+
+h1{
+  text-align: center;
+}
+.commandList {
+}
+
+.tyrionResponse {
+  margin-left: 25%;
 }
