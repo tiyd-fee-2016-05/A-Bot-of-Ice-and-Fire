@@ -1,4 +1,8 @@
 
+
+//Help Command
+console.log("Help ready.");
+
 //Help Command
 
 //WHEN USER SUBMITS FORM//

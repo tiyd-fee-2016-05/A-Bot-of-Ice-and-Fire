@@ -1,3 +1,4 @@
+console.log("Giphy ready")
 
 //Giphy Ajax Call
 $('.talktoBot').on('submit', function (e) {
