@@ -9,24 +9,23 @@ var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHAT
 
   console.log(gifKeyword);
 
-  console.log("Tyrion will find gifs about " + gifKeyword);
+  // console.log("Tyrion will find gifs about " + gifKeyword);
 
-if (commandtext == "@gif " + gifKeyword) {
-  // console.log("Tyrion will find gifs about " + keyword);
+if (commandtext == "@gif")
+  console.log("Tyrion will find gifs about " + gifKeyword);
 
 
 $.ajax({
-  url: "http://api.giphy.com/v1/gifs/search?q=" + gifKeyword + "api_key=dc6zaTOxFJmzC",
-  dataType:"JSON",
+  url: "http://api.giphy.com/v1/gifs/search?q=" + gifKeyword + "&api_key=dc6zaTOxFJmzC",
+  dataType:"json",
   method: "GET",
-}).done(function(JSON) {
+}).done(function(data) {
     console.log("Ajax call to the Giphy API");
-    console.log(JSON);
+    console.log(data.data[0].images.downsized.url);
 
     // for (var i = 0; i < JSON.length; i++){
-      var gifUrl = (JSON.data[0].images.downsized_large.url)
+      var gifUrl = (data.data[0].images.downsized.url)
 
     $(".tyrionEntry").append('<li class="response">' + "<img src='" + gifUrl + "'/>" + '</li>');
   });
-}
 });
