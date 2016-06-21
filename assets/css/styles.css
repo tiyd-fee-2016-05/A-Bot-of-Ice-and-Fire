@@ -5,22 +5,47 @@ ul {
   list-style: none; }
 
 .ScreenWindow {
-  width: 30%;
+  width: 100%;
   background-image: url("http://i.imgur.com/mZvlSGd.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
   background-position: 30% 75%;
-  height: 850px;
-  overflow: auto; }
+  height: 850px; }
 
 h1 {
   text-align: center; }
 
-.tyrionResponse {
-  margin-left: 25%; }
+.commandBar {
+  margin-top: 650px;
+  width: 100%;
+  border: 1px solid white;
+  background-color: none;
+  height: 10%;
+  color: white; }
+
+.tyrionEntry {
+  margin-left: 150px;
+  position: absolute;
+  height: 55px;
+  color: brown; }
+
+.chatWindowentry {
+  height: 55px;
+  color: white;
+  margin: 20px;
+  border: 1; }
+
+.chatplace {
+  width: 100%;
+  position: relative;
+  overflow: auto; }
 
 .talktoBot {
   position: fixed; }
+
+.image {
+  height: 250px;
+  width: 350px; }
 
 /*# sourceMappingURL=styles.css.map */

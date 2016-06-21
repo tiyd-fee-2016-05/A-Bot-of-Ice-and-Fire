@@ -1,4 +1,48 @@
 console.log("Spotify ready.");
+
+$('.talktoBot').on('submit', function (e) {
+  e.preventDefault()
+
+  var commandtext = $('input[class="command"]').val();
+    console.log("The user submitted" + commandtext)
+  // console.log(commandtext);
+  var commands = [];
+      commands.push(commandtext)
+
+console.log("You typed " + commands[0])
+
+var spotifyCheck = commandtext.search("@song");
+  console.log(spotifyCheck);
+
+if (spotifyCheck > -1){
+console.log("@spotify is there!")
+
+  $(".tyrionEntry").append('<li class="response">' + "Enjoy the Sounds of Westeros."+ '</li>')
+  $.ajax({
+        dataType: 'json',
+        url: "https://api.spotify.com/v1/users/gameofthrones",
+        method: "GET",
+
+      }).done(function(json) {
+            var albumURL = "http://i.imgur.com/xQHMk98.jpg/"
+          $(".tyrionEntry").append('<li class="response">' + "<a href=" + json.external_urls.spotify + ">" + "<img src='" + albumURL + "'/>" + "</a>" + "</li>");
+
+        console.log(json);
+
+});
+
+
+
+
+
+
+
+
+};
+});
+
+
+
 // $(function(){
 //   'use strict';
 //   var search
