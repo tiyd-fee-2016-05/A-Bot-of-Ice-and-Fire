@@ -1,3 +1,4 @@
+console.log("Giphy ready")
 
 //Giphy Ajax Call
 $('.talktoBot').on('submit', function (e) {
@@ -12,9 +13,12 @@ var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHAT
 
   // console.log("Tyrion will find gifs about " + gifKeyword);
 
-if (commandtext == "@gif")
+var gifCheck = commandtext.search("@gif");
+  console.log(gifCheck);
   console.log("Tyrion will find gifs about " + gifKeyword);
 
+if (gifCheck > -1){
+console.log("@gif is there!")
 
 $.ajax({
   url: "http://api.giphy.com/v1/gifs/search?q=" + gifKeyword + "&api_key=dc6zaTOxFJmzC",
@@ -29,4 +33,5 @@ $.ajax({
 
     $(".tyrionEntry").append('<li class="response">' + "<img src='" + gifUrl + "'/>" + '</li>');
   });
+};
 });

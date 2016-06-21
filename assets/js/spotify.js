@@ -11,31 +11,25 @@ $('.talktoBot').on('submit', function (e) {
 
 console.log("You typed " + commands[0])
 
-if (commandtext === "@songoficeandfire") {
-  console.log("Let's play a song.")
+var spotifyCheck = commandtext.search("@song");
+  console.log(spotifyCheck);
 
-  $(".tyrionEntry").append('<li class="response">' + "Music is dope."+ '</li>')
-}
+if (spotifyCheck > -1){
+console.log("@spotify is there!")
 
-console.log ("I am searching " + commands+ " on Spotify.")
-$.ajax({
-      dataType: 'json',
-      url: "https://api.spotify.com/v1/users/gameofthrones",
-      method: "GET",
+  $(".tyrionEntry").append('<li class="response">' + "Enjoy the Sounds of Westeros."+ '</li>')
+  $.ajax({
+        dataType: 'json',
+        url: "https://api.spotify.com/v1/users/gameofthrones",
+        method: "GET",
 
-    }).done(function(json) {
+      }).done(function(json) {
+            var albumURL = "http://i.imgur.com/xQHMk98.jpg/"
+          $(".tyrionEntry").append('<li class="response">' + "<a href=" + json.external_urls.spotify + ">" + "<img src='" + albumURL + "'/>" + "</a>" + "</li>");
 
-            var imageURL = "http://i.imgur.com/xQHMk98.jpg"
-        $(".tyrionEntry").append(
-                                        '<li class="response">' + "<img class ='image' src='" + imageURL + "'/>" +
+        console.log(json);
 
-                                        "</li>"
-
-
-      );
-
-      console.log(json);
-    });
+});
 
 
 
@@ -44,6 +38,7 @@ $.ajax({
 
 
 
+};
 });
 
 

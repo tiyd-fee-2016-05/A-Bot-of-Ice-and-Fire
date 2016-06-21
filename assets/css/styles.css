@@ -5,7 +5,7 @@ ul {
   list-style: none; }
 
 .ScreenWindow {
-  width: 30%;
+  width: 100%;
   background-image: url("http://i.imgur.com/mZvlSGd.jpg");
   background-size: cover;
   background-repeat: no-repeat;

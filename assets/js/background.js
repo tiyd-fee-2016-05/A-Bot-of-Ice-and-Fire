@@ -1,33 +1,31 @@
 console.log("Background ready.");
 
 
-//WHEN USER SUBMITS FORM//
-
 $('.talktoBot').on('submit', function (e) {
   e.preventDefault()
 
-  var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHATEVER USER INPUTS
+  var commandtext = $('input[class="command"]').val();
     console.log("The user submitted" + commandtext)
 
-  var commands = []; //OPEN ARRAY
-      commands.push(commandtext)//PUT THE INPUT CONTENT INTO THIS ARRAY
+var bgKeyword = commandtext.slice(11);
 
-if (commandtext == "@background") {
-  $(".tyrionEntry").append('<li class="response">' + "What color would you like?"+ '</li>')
-              };
-
-console.log("You typed " + commands[0])//TELLS US WHAT FIRST <LI> IS BEING READ
+console.log("I am searching for " + bgKeyword);
 
 
 
-var list = $(".commandList")
+var backgroundCheck = commandtext.search("@background");
+  console.log(backgroundCheck);
 
-$(".chatWindowentry").append('<li class="userCommands">' + commandtext + '</li>')
+if (backgroundCheck > -1){
+console.log("@background is there!");
+  $("body").css("background-color" , bgKeyword);
+};
+
+
+
+
+
+
+
+
 });
-
-
-
-
-
-
-// $(".tyrionEntry").append('<li class="userCommands">' + commandtext + '</li>')
