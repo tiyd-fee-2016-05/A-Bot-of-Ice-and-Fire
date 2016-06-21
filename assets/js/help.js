@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //Help Command
 
 //WHEN USER SUBMITS FORM//
@@ -37,4 +37,5 @@ if (commandtext == "@help") {
   $(".tyrionEntry").append('<li class="response">' + "@a-song-of-ice-and-fire (hear what Westeros is listening to) "+ '</li>')
 
 };
+});
 });
