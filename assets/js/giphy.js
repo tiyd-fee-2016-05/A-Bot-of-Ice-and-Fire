@@ -5,17 +5,18 @@ $('.talktoBot').on('submit', function (e) {
 var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHATEVER USER INPUTS
   console.log("The user submitted" + commandtext)
 
-  var keyword = commandtext.split(" ");
-  console.log(commandtext);
+  var gifKeyword = commandtext.slice(4);
 
-  console.log("Tyrion will find gifs about " + keyword);
+  console.log(gifKeyword);
 
-if (commandtext == "@gif") {
+  console.log("Tyrion will find gifs about " + gifKeyword);
+
+if (commandtext == "@gif " + gifKeyword) {
   // console.log("Tyrion will find gifs about " + keyword);
 
 
 $.ajax({
-  url: "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC",
+  url: "http://api.giphy.com/v1/gifs/search?q=" + gifKeyword + "api_key=dc6zaTOxFJmzC",
   dataType:"JSON",
   method: "GET",
 }).done(function(JSON) {
