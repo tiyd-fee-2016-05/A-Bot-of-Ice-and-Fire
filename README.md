@@ -1,9 +1,14 @@
 # A-Bot-of-Ice-and-Fire
 
-#Kaitlin:
-Today, Sinovia and I broke down our project into (seemingly) manageable pieces. We created a Trello to keep track of our work and decided how we should allocate our time.
-During lab time, we made headway with getting our input to trigger a response from our bot. By the end of class, we were able to append both user input and bot input to unordered lists.
+#Monday
+Today, Sinovia and Kaitlin broke down the Bot build into (seemingly) manageable pieces. They created a Trello to keep track of their work and decided how they should allocate their time.
+During lab time, they made headway with getting their input to trigger a response from the bot. By the end of class, they were able to append both user input and bot input to unordered lists.
 
-This evening, we divided the tasks of writing additional JS for some of our other commands.
+This evening, they divided the tasks of writing additional JS for some of the other commands.
 
-Specifically, I read through the Giphy API and decided how best to write GET requests to them and wrote JS to append our '@help' menu.
+Specifically, Kaitlin read through the Giphy API and decided how best to write GET requests to them and wrote JS to append our '@help' menu.
+
+#Tuesday
+A lot of great headway was made calling API's for the bot. Sinovia and Kaitlin got the @giphy and @song features working, appending content to the page with each call.
+
+Now comes the styling.

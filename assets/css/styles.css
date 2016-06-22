@@ -14,6 +14,13 @@ p {
   margin-top: 10px;
   text-align: center; }
 
+.heading {
+  text-align: center;
+  font-family: Cinzel, serif;
+  color: brown;
+  size: 700; }
+
+
 ul {
   list-style: none; }
 
@@ -37,6 +44,10 @@ ul {
   background-position: 30% 75%;
   border: 3px solid lime; }
 
+.ScreenWindow {
+  height: 850px; }
+
+
 .commandBar {
   position: fixed;
   width: 100%;
@@ -50,10 +61,10 @@ ul {
   color: brown; }
 
 .chatWindowentry {
-  height: 55px;
+  height: 5.5em;
   color: white;
-  margin: 20px;
-  border: 1; }
+  margin: 2em;
+  border: 1em; }
 
 .chatplace {
   width: 100%;
@@ -61,11 +72,11 @@ ul {
   overflow: auto; }
 
 .talktoBot {
-  position: fixed; }
+  position: fixed;
+  border: solid red 2px; }
 
-.image {
-  height: 250px;
-  width: 350px; }
+.submitButton {
+  border: solid red 2px; }
 
 /*# sourceMappingURL=styles.css.map */
 
