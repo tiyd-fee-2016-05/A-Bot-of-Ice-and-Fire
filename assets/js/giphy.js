@@ -5,7 +5,7 @@ $('.talktoBot').on('submit', function (e) {
   e.preventDefault()//KEEPS FROM REFRESHING
 
 var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHATEVER USER INPUTS
-  console.log("The user submitted" + commandtext)
+
 
   var gifKeyword = commandtext.slice(4);
 
@@ -16,10 +16,9 @@ var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHAT
 //Had to .search for "@gif" in commandtext input.
 var gifCheck = commandtext.search("@gif");
   console.log(gifCheck);
-  console.log("Tyrion will find gifs about " + gifKeyword);
 //Test .search results by seeing Boolean presence of "@gif"-- AKA, if it were to say "@bif" instead, it will not trigger function with Ajax call. Additional fail-safe for other commands.
 if (gifCheck > -1){
-console.log("@gif is there!")
+
 
 //Ajax call for Giphy
 
@@ -33,7 +32,10 @@ $.ajax({
 
       var gifUrl = (data.data[0].images.downsized.url)//Telling Giphy API specifically what we are looking for
 
-    $(".tyrionEntry").append('<li class="response">' + "<img src='" + gifUrl + "'/>" + '</li>'); //Appending result of search to chat window
+      $(".commandList").append('<li class="userEntry">' + '<img class="userIcon" src= "user-icon.png"><div class=userText>' + commandtext + '</li>')
+
+      $(".commandList").append('<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "tyrion-pic.png">' + '<div class=tyrionText>' +
+       "Look at it go!"+ "<img class = 'image' src='" + gifUrl + "'/>" + '</li>')
 
   });
 };
