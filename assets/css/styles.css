@@ -1,33 +1,55 @@
 body {
   background-color: #E2D1A9; }
 
+#logoDiv {
+  height: 6em;
+  width: 6em;
+  display: inline-block; }
+
+#logo {
+  height: 6em;
+  width: 4em;
+  margin-left: 40em;
+  display: inline-block; }
+
 .headerwords {
   font-family: 'Cinzel', serif;
   font-weight: "3em";
   font-size: 45px;
   color: brown;
-  margin-top: 10px;
-  text-align: center; }
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block; }
 
 ul {
   list-style: none;
   font-family: Noto sans; }
+
+li {
+  list-style: none; }
+
+.hodorIcon {
+  width: 5em;
+  height: 5em; }
 
 .headertitle {
   background-color: brown;
   height: 4.5em; }
 
 .wrapper {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 25%;
+  margin-right: 25%;
   height: 350px;
   overflow-y: auto; }
 
 .commandBar {
-  height: 150px;
+  height: 4em;
+  width: 100%;
   margin-left: 20%;
   margin-right: 20%;
-  color: white; }
+  color: white;
+  background-color: brown;
+  padding: 1em 6em 1em 10em; }
 
 .entry {
   color: white;
