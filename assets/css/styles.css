@@ -7,7 +7,6 @@ body {
   font-weight: "3em";
   font-size: 45px;
   color: #E2D1A9;
-  margin-top: 10px;
   text-align: center; }
 
 ul {
@@ -15,12 +14,15 @@ ul {
 
 .headertitle {
   background-color: brown;
-  height: 4.5em; }
+  height: 4.5em;
+  width: 100%;
+  border: 1px solid gold; }
 
 .wrapper {
   margin-left: 20%;
   margin-right: 20%;
-  height: 350px; }
+  height: 350px;
+  border: 1px solid lime; }
 
 .commandBar {
   height: 150px;
@@ -81,5 +83,12 @@ ul {
   font-size: 15px;
   display: inline-block;
   width: 300px; }
+
+.dragonIcon {
+  height: 140px;
+  width: 90px; }
+
+.command {
+  height: 50px; }
 
 /*# sourceMappingURL=styles.css.map */
