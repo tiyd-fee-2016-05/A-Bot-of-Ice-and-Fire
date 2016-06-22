@@ -19,7 +19,7 @@ $('.talktoBot').on('submit', function (e) {
     if (helpCheck > -1){
   console.log("Help has arrived.")
 
-  $(".commandList").append('<li class="userEntry">' + '<img class="userIcon" src= "user-icon.png"><div class=userText>' + commandtext + '</li>')
+  $(".commandList").append('<li class="userEntry userText">' + '<img class="userIcon" src= "user-icon.png"><div class=userText>' + commandtext + '</li>')
 
   $(".commandList").append('<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "tyrion-pic.png">' + '<div class=tyrionText>' +
    "I'm at your service!")

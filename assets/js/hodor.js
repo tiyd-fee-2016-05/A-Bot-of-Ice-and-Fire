@@ -13,14 +13,14 @@ var hodorCheck = commandtext.search("@hodor");
 if (hodorCheck > -1){
 console.log("@hodor is there!")
 
-            $(".commandList").append('<li class="userEntry">' + commandtext + '</li>' +
+            $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>' +
                                   '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "hodor-pic.png">' + '<div class=tyrionText>' +
                                    "Hodor.  Hodor.  Hodor."+ '</div>' + '</li>')
 
 };
 
 });
-// 
+//
 // Change for change
 
 

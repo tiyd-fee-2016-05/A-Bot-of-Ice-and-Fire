@@ -1,6 +1,6 @@
-$textcolor: #E2D1A9;
+$textcolor: #D3B259;
+$goldenrod: #D3B259;
 $lannisterbrown: brown;
-$lannisterred: red;
 
 
 body {
@@ -23,19 +23,17 @@ ul {
 
 
 .wrapper {
-margin-left: 20%;
+margin-left: 25%;
 margin-right: 30%;
 height: 350px;
 overflow-y: auto;
 display: block;
  }
 
-
-
 .commandBar {
   height: 150px;
   width: 100%;
-  border: 3px solid gold;
+  border: 3px solid $goldenrod;
   color: white;
 background-color: $lannisterbrown;
 margin-top: 150px;
@@ -43,7 +41,7 @@ margin-top: 150px;
 
 .entry {
   color: white;
-  border: 1px solid $textcolor;
+  border: 1px solid $goldenrod;
   border-radius: 5px;
   width: 500px;
   }
@@ -58,43 +56,56 @@ margin-top: 150px;
   margin-left: 20em; }
 
 .image {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   margin-left: 30px;
-  display: inline}
+  display: inline;
+}
 
   .userEntry {
     margin-left: 20%;
-    width: 350px;
+    width: 300px;
+    height: 100px;
     background-color: $lannisterbrown;
     border-radius: 5px;
-    min-height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
   }
 
   .tyrionResponse {
     margin-right: 25%;
     margin-left: 15%;
     width: 350px;
-    background-color: gold;
+    background-color: $goldenrod;
     border-radius: 5px;
-    min-height: 50px;
+
     margin: 20px;
+    border: 2px solid $lannisterbrown;
   }
 
   .tyrionText {
-    color: $lannisterred;
-    font-size:15px;
+    color: $lannisterbrown;
+    font-size:13px;
     display: inline-block;
     width: 250px;
-    margin-top: 30px;
+    margin-top: 5px;
     float: right;
+    padding-bottom: 15px;
+  }
+
+  a{
+    text-decoration: none;
+    color: $lannisterbrown;
   }
 
   .userText {
-    color: gold;
+    color: $goldenrod;
     font-size:15px;
     display: inline;
-    width: 300px;
+
+    margin-top: 10px;
+    vertical-align: middle;
 
   }
 
@@ -117,7 +128,7 @@ width: 400px;
   .topBorder
   {
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: $lannisterbrown;
   }
 

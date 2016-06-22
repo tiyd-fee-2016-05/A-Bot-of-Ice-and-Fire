@@ -16,7 +16,7 @@ var backgroundCheck = commandtext.search("@background");
 if (backgroundCheck > -1){
   $("body").css("background-color" , bgKeyword);
 
-  $(".commandList").append('<li class="userEntry">' + commandtext + '</li>')
+  $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>')
 
   $(".commandList").append('<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "tyrion-pic.png">' + '<div class=tyrionText>' +
    "A fabulous choice!  Not quite my shade though...")

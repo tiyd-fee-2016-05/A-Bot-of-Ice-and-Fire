@@ -13,7 +13,7 @@ var helpCheck = commandtext.search("@help");
 if (helpCheck > -1){
 console.log("@help is there!")
 
-            $(".commandList").append('<li class="userEntry">' + commandtext + '</li>' +
+            $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>' +
                                   '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "Tyrion-pic.png">' + '<div class=tyrionText>' +
                                    "I am a man of many talents" + '<br>'+ '@background to change background' + '<br>' + '@gif to search for gifs' + '<br>' + '@song to listen to the music of Westeros' + '<br>' + '@help to call on me again' + '</div>' + '</li>')
 
