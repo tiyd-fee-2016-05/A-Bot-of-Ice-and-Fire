@@ -5,7 +5,7 @@ $('.talktoBot').on('submit', function (e) {
   e.preventDefault()//KEEPS FROM REFRESHING
 
 var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHATEVER USER INPUTS
-  console.log("The user submitted" + commandtext)
+
 
   var gifKeyword = commandtext.slice(4);
 
@@ -15,10 +15,10 @@ var commandtext = $('input[class="command"]').val();//ASSIGNING VARIABLE TO WHAT
 
 var gifCheck = commandtext.search("@gif");
   console.log(gifCheck);
-  console.log("Tyrion will find gifs about " + gifKeyword);
+
 
 if (gifCheck > -1){
-console.log("@gif is there!")
+
 
 $.ajax({
   url: "http://api.giphy.com/v1/gifs/search?q=" + gifKeyword + "&api_key=dc6zaTOxFJmzC",
@@ -31,7 +31,10 @@ $.ajax({
     // for (var i = 0; i < JSON.length; i++){
       var gifUrl = (data.data[0].images.downsized.url)
 
-    $(".entry").append('<li class="response">' + "<img src='" + gifUrl + "'/>" + '</li>');
+      $(".commandList").append('<li class="userEntry">' + '<img class="userIcon" src= "user-icon.png"><div class=userText>' + commandtext + '</li>')
+
+      $(".commandList").append('<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "tyrion-pic.png">' + '<div class=tyrionText>' +
+       "Look at it go!"+ "<img class = 'image' src='" + gifUrl + "'/>" + '</li>')
   });
 };
 });

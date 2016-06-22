@@ -1,8 +1,10 @@
 $textcolor: #E2D1A9;
+$lannisterbrown: brown;
+$lannisterred: red;
 
 
 body {
-  background-color: brown; }
+  background-color: $lannisterbrown; }
 
 .headerwords {
   font-family: 'Cinzel', serif;
@@ -16,7 +18,7 @@ ul {
   list-style: none; }
 
 .headertitle {
-  background-color: brown;
+  background-color: $lannisterbrown;
 
   height: 4.5em;
 }
@@ -27,7 +29,7 @@ height: 350px;
 overflow-y: auto;}
   // background-size: cover;
   // background-repeat: no-repeat;
-  // background-color: brown;
+  // background-color: $lannisterbrown;
   // background-position: 30% 75%;
 
 .commandBar {
@@ -55,8 +57,10 @@ overflow-y: auto;}
   margin-left: 20em; }
 
 .image {
-  height: 50px;
-  width: 50px; }
+  height: 80px;
+  width: 80px;
+  margin-left: 30px;
+  display: inline}
 
   .userEntry {
     background-color: $textcolor;
@@ -64,6 +68,7 @@ overflow-y: auto;}
     margin-left: 15%;
     width: 400px;
     border-radius: 3px;
+    margin: 20px;
     // min-height: 20px;
 
 
@@ -76,11 +81,12 @@ overflow-y: auto;}
     background-color: gold;
     border-radius: 3px;
     min-height: 90px;
+    margin: 20px;
 
   }
 
   .tyrionText {
-    color: red;
+    color: $lannisterred;
     font-size:15px;
     display: inline-block;
     width: 300px;
@@ -89,7 +95,7 @@ overflow-y: auto;}
   }
 
   .userText {
-    color: red;
+    color: $lannisterred;
     font-size:15px;
     display: inline-block;
     width: 300px;
