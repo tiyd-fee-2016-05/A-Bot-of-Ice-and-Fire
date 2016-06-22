@@ -1,6 +1,11 @@
 body {
   background-color: brown; }
 
+#logo {
+  width: 4em;
+  height: 6em;
+  margin: 5.5em .5em 1em 16em; }
+
 p {
   font-family: 'Cinzel', serif;
   font-weight: "3em";
@@ -12,9 +17,17 @@ p {
 ul {
   list-style: none; }
 
+#Tyrion {
+  height: 6em;
+  width: 6em; }
+
+#userIcon {
+  height: 6em;
+  width: 6em; }
+
 .headertitle {
   background-color: brown;
-  height: 4.5em; }
+  height: 2em; }
 
 .wrapper {
   width: 100%;
