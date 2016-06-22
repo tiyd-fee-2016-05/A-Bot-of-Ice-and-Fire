@@ -7,22 +7,27 @@ body {
   font-weight: "3em";
   font-size: 45px;
   color: #E2D1A9;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid blue;
+  width: 500px;
+  display: inline; }
 
 ul {
   list-style: none; }
 
 .headertitle {
   background-color: brown;
-  height: 4.5em;
+  height: 110px;
   width: 100%;
-  border: 1px solid gold; }
+  border: 1px solid gold;
+  display: inline; }
 
 .wrapper {
   margin-left: 20%;
   margin-right: 20%;
   height: 350px;
-  border: 1px solid lime; }
+  border: 1px solid lime;
+  overflow-y: auto; }
 
 .commandBar {
   height: 150px;
@@ -85,8 +90,10 @@ ul {
   width: 300px; }
 
 .dragonIcon {
-  height: 140px;
-  width: 90px; }
+  height: 100px;
+  width: 70px;
+  border: 1px solid blue;
+  display: inline; }
 
 .command {
   height: 50px; }

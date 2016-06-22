@@ -1,4 +1,4 @@
-console.log("Spotify ready.");
+console.log("Hodor.  Hodor.");
 
 $('.talktoBot').on('submit', function (e) {
   e.preventDefault()
