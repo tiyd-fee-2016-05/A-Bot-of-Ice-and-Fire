@@ -1,5 +1,20 @@
 body {
-  background-color: #E2D1A9; }
+  background-color: brown; }
+
+#logo {
+  width: 4em;
+  height: 6em;
+  margin: 5.5em .5em 1em 16em; }
+
+
+.headerwords {
+
+  font-family: 'Cinzel', serif;
+  font-weight: "3em";
+  font-size: 45px;
+  color: #E2D1A9;
+  margin-top: 10px;
+  text-align: center; }
 
 .heading {
   text-align: center;
@@ -7,18 +22,37 @@ body {
   color: brown;
   size: 700; }
 
+
 ul {
   list-style: none; }
+
+#Tyrion {
+  height: 6em;
+  width: 6em; }
+
+#userIcon {
+  height: 6em;
+  width: 6em; }
+
+.headertitle {
+  background-color: brown;
+  height: 2em; }
+
+.wrapper {
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 350px;
+  overflow-y: auto; }
 
 .ScreenWindow {
   height: 850px; }
 
+
 .commandBar {
-  margin-top: 650px;
-  width: 100%;
-  border: 1px solid white;
-  background-color: none;
-  height: 10%;
+  height: 150px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 3px solid gold;
   color: white; }
 
 .tyrionEntry {
@@ -33,16 +67,51 @@ ul {
   margin: 2em;
   border: 1em; }
 
-.chatplace {
-  width: 100%;
-  position: relative;
-  overflow: auto; }
+.tyrionIcon {
+  height: 80px;
+  width: 80px;
+  display: inline-block; }
 
-.talktoBot {
-  position: fixed;
-  border: solid red 2px; }
+.userIcon {
+  height: 90px;
+  width: 90px;
+  margin-left: 20em; }
 
-.submitButton {
-  border: solid red 2px; }
+.image {
+  height: 80px;
+  width: 80px;
+  margin-left: 30px;
+  display: inline; }
+
+.userEntry {
+  background-color: #E2D1A9;
+  margin-right: 25%;
+  margin-left: 15%;
+  width: 400px;
+  border-radius: 3px;
+  margin: 20px; }
+
+.tyrionResponse {
+  margin-right: 25%;
+  margin-left: 15%;
+  width: 400px;
+  background-color: gold;
+  border-radius: 3px;
+  min-height: 90px;
+  margin: 20px; }
+
+.tyrionText {
+  color: red;
+  font-size: 15px;
+  display: inline-block;
+  width: 300px;
+  margin-top: -200px;
+  z-index: 100; }
+
+.userText {
+  color: red;
+  font-size: 15px;
+  display: inline-block;
+  width: 300px; }
 
 /*# sourceMappingURL=styles.css.map */

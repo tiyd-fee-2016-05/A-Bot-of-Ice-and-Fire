@@ -1,9 +1,5 @@
-
-
-//Help Command
-console.log("Help ready.");
-
-//Help Command
+//Hodor Command
+console.log("Hodor ready.");
 
 //WHEN USER SUBMITS FORM//
 
@@ -32,12 +28,14 @@ $('.talktoBot').on('submit', function (e) {
 console.log("You typed " + commands[0])
 
 
-if (commandtext == "@help") {
-  console.log("Tyrion can help.")
+if (commandtext == "@hodor") {
+  console.log("Hold the door.")
 
-  $(".commandList").append('<li class="tyrionResponse">' + "@background (change the window's color)"+ '</li>')
-  $(".entry").append('<li class="tyrionResponse">' + "@gif (search the Seven Kingdoms for gifs)"+ '</li>')
 
+$(".commandList").append('<li class="userEntry">' + '<img class="userIcon" src= "user-icon.png"><div class=userText>' + commandtext + '</li>')
+
+ $(".commandList").append('<li class="tyrionResponse">' + ' <img class="hodorIcon" src= "hodor-pic.png">' + '<div class=tyrionText>' +
+  "Hodor Hodor, Hodor.")
 
 };
 });

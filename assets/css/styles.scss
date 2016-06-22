@@ -1,60 +1,102 @@
-body {
-  background-color: black;
-}
+$textcolor: #E2D1A9;
+$lannisterbrown: brown;
+$lannisterred: red;
 
+
+body {
+  background-color: $lannisterbrown; }
+
+.headerwords {
+  font-family: 'Cinzel', serif;
+  font-weight: "3em";
+  font-size: 45px;
+  color: #E2D1A9;
+  margin-top: 10px;
+  text-align: center;}
 
 ul {
-  list-style: none
-}
+  list-style: none; }
 
-.ScreenWindow {
-  width: 30%;
-  background-image: url("http://i.imgur.com/mZvlSGd.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: black;
-    background-position: 30% 75%;
-    height: 850px;
-}
+.headertitle {
+  background-color: $lannisterbrown;
 
-h1{
-  text-align: center;
+  height: 4.5em;
 }
+.wrapper {
+margin-left: 20%;
+margin-right: 20%;
+height: 350px;
+overflow-y: auto;}
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-color: $lannisterbrown;
+  // background-position: 30% 75%;
+
 .commandBar {
-margin-top: 650px;
-width: 100%;
-border: 1px solid white;;
-background-color: none;
-height: 10%;
-color: white;
-}
+  height: 150px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 3px solid gold;
+  color: white; }
 
-.tyrionEntry {
-  margin-left: 150px;
-  position: absolute;
-  height:55px;
-  color: brown;
-}
+.entry {
+  color: white;
+  border: 1px solid $textcolor;
+  border-radius: 5px;
+  width: 500px;
+  }
 
-.chatWindowentry {
-height:55px;
-color: white;
-margin: 20px;
-border: 1
-}
+  .tyrionIcon {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+  }
+  .userIcon {
+    height: 90px;
+    width: 90px;
+  margin-left: 20em; }
 
-.chatplace {
-width: 100%;
-position: relative;
-overflow: auto;
-}
+.image {
+  height: 80px;
+  width: 80px;
+  margin-left: 30px;
+  display: inline}
+
+  .userEntry {
+    background-color: $textcolor;
+    margin-right: 25%;
+    margin-left: 15%;
+    width: 400px;
+    border-radius: 3px;
+    margin: 20px;
+    // min-height: 20px;
 
 
-.talktoBot {
-  position: fixed;
-}
+  }
 
-.image{
-  height: 250px;
-  width: 350px;
-}
+  .tyrionResponse {
+    margin-right: 25%;
+    margin-left: 15%;
+    width: 400px;
+    background-color: gold;
+    border-radius: 3px;
+    min-height: 90px;
+    margin: 20px;
+
+  }
+
+  .tyrionText {
+    color: $lannisterred;
+    font-size:15px;
+    display: inline-block;
+    width: 300px;
+    margin-top: -200px;
+    z-index: 100;
+  }
+
+  .userText {
+    color: $lannisterred;
+    font-size:15px;
+    display: inline-block;
+    width: 300px;
+  }
