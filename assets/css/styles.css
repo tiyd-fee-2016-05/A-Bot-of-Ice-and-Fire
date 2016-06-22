@@ -3,7 +3,7 @@ body {
 
 #logoDiv {
   height: 6em;
-  width: 6em;
+  width: 32%;
   display: inline-block; }
 
 #logo {
@@ -14,10 +14,11 @@ body {
 
 .headerwords {
   font-family: 'Cinzel', serif;
-  font-weight: "3em";
+  font-weight: 3em;
   font-size: 45px;
-  color: brown;
-  margin-top: 30px;
+  color: #E2D1A9;
+  margin-left: 33%;
+  margin-top: 20px;
   text-align: center;
   display: inline-block; }
 
@@ -42,14 +43,21 @@ li {
   height: 350px;
   overflow-y: auto; }
 
+.talktoBot {
+  margin-left: 33%;
+  width: 6em; }
+
+.command {
+  width: 30em;
+  border-radius: 2px;
+  outline: none; }
+
 .commandBar {
   height: 4em;
   width: 100%;
-  margin-left: 20%;
-  margin-right: 20%;
   color: white;
   background-color: brown;
-  padding: 1em 6em 1em 10em; }
+  padding: 1em; }
 
 .entry {
   color: white;
@@ -75,20 +83,18 @@ li {
 
 .userEntry {
   background-color: #E2D1A9;
-  margin-right: 25%;
+  margin-right: 15%;
   margin-left: 15%;
   width: 400px;
-  border-radius: 3px;
-  margin: 20px; }
+  border-radius: 3px; }
 
 .tyrionResponse {
-  margin-right: 25%;
+  margin-right: 15%;
   margin-left: 15%;
   width: 400px;
   background-color: #E2D1A9;
   border-radius: 3px;
-  min-height: 90px;
-  margin: 20px; }
+  min-height: 90px; }
 
 .tyrionText {
   color: brown;
