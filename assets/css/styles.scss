@@ -4,7 +4,8 @@ $lannisterred: red;
 
 
 body {
-  background-color: $lannisterbrown; }
+  background-color: $lannisterbrown;
+overflow: hidden; }
 
 .headerwords {
   font-family: 'Cinzel', serif;
@@ -25,8 +26,7 @@ ul {
 .wrapper {
 margin-left: 20%;
 margin-right: 20%;
-height: 350px;
-overflow-y: auto;}
+height: 350px;}
   // background-size: cover;
   // background-repeat: no-repeat;
   // background-color: $lannisterbrown;
@@ -70,8 +70,6 @@ overflow-y: auto;}
     border-radius: 3px;
     margin: 20px;
     // min-height: 20px;
-
-
   }
 
   .tyrionResponse {
@@ -82,7 +80,6 @@ overflow-y: auto;}
     border-radius: 3px;
     min-height: 90px;
     margin: 20px;
-
   }
 
   .tyrionText {

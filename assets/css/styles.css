@@ -1,5 +1,6 @@
 body {
-  background-color: brown; }
+  background-color: brown;
+  overflow: hidden; }
 
 .headerwords {
   font-family: 'Cinzel', serif;
@@ -19,8 +20,7 @@ ul {
 .wrapper {
   margin-left: 20%;
   margin-right: 20%;
-  height: 350px;
-  overflow-y: auto; }
+  height: 350px; }
 
 .commandBar {
   height: 150px;

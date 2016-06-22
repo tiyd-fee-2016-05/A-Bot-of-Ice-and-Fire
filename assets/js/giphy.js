@@ -31,10 +31,10 @@ $.ajax({
     // for (var i = 0; i < JSON.length; i++){
       var gifUrl = (data.data[0].images.downsized.url)
 
-      $(".commandList").append('<li class="userEntry">' + '<img class="userIcon" src= "user-icon.png"><div class=userText>' + commandtext + '</li>')
+      $(".commandList").append('<li class="userEntry">' + commandtext + '</li>')
 
       $(".commandList").append('<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "tyrion-pic.png">' + '<div class=tyrionText>' +
-       "Look at it go!"+ "<img class = 'image' src='" + gifUrl + "'/>" + '</li>')
+       "Look at it go!"+ "<img class = 'image'src='" + gifUrl + "'/>" + '</li>')
   });
 };
 });
