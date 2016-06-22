@@ -1,25 +1,17 @@
 body {
-  background-color: black; }
+  background-color: #E2D1A9; }
 
 h1 {
-  font-family: 'Cinzel', serif;
-  font-weight: "3em";
-  color: #6F1608; }
+  text-align: center;
+  font-family: Cinzel, serif;
+  color: brown;
+  size: 700; }
 
 ul {
   list-style: none; }
 
 .ScreenWindow {
-  width: 100%;
-  background-image: url("http://i.imgur.com/mZvlSGd.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: 30% 75%;
   height: 850px; }
-
-h1 {
-  text-align: center; }
 
 .commandBar {
   margin-top: 650px;
@@ -36,10 +28,10 @@ h1 {
   color: brown; }
 
 .chatWindowentry {
-  height: 55px;
+  height: 5.5em;
   color: white;
-  margin: 20px;
-  border: 1; }
+  margin: 2em;
+  border: 1em; }
 
 .chatplace {
   width: 100%;
@@ -47,10 +39,10 @@ h1 {
   overflow: auto; }
 
 .talktoBot {
-  position: fixed; }
+  position: fixed;
+  border: solid red 2px; }
 
-.image {
-  height: 250px;
-  width: 350px; }
+.submitButton {
+  border: solid red 2px; }
 
 /*# sourceMappingURL=styles.css.map */
