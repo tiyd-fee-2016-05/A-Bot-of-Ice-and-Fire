@@ -9,7 +9,7 @@ body {
 #logo {
   height: 6em;
   width: 4em;
-  margin-left: 45%;
+  margin-left: 48%;
   display: inline-block; }
 
 .headerwords {
@@ -17,7 +17,7 @@ body {
   font-weight: 3em;
   font-size: 45px;
   color: #E2D1A9;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 20px;
   text-align: center;
   display: inline-block; }
@@ -30,7 +30,7 @@ ul {
 li {
   list-style: none;
   color: brown;
-  padding: .2em; }
+  padding: 2em; }
 
 .hodorIcon {
   width: 5em;
@@ -43,11 +43,11 @@ li {
 .wrapper {
   margin-left: 25%;
   margin-right: 25%;
-  height: 350px;
+  height: 80%;
   overflow-y: auto; }
 
 .talktoBot {
-  margin-left: 43%;
+  margin-left: 35%;
   width: 6em;
   color: brown;
   display: inline-block; }
@@ -69,8 +69,7 @@ li {
   width: 30em;
   border-radius: 2px;
   outline: none;
-  color: brown;
-  border: blue 2px solid; }
+  color: brown; }
 
 .commandBar {
   height: 4em;
