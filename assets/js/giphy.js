@@ -31,7 +31,7 @@ $.ajax({
     // for (var i = 0; i < JSON.length; i++){
       var gifUrl = (data.data[0].images.downsized.url)
 
-    $(".tyrionEntry").append('<li class="response">' + "<img src='" + gifUrl + "'/>" + '</li>');
+    $(".entry").append('<li class="response">' + "<img src='" + gifUrl + "'/>" + '</li>');
   });
 };
 });
