@@ -36,7 +36,8 @@ if (commandtext == "@help") {
   console.log("Tyrion can help.")
 
   $(".commandList").append('<li class="tyrionResponse">' + "@background (change the window's color)"+ '</li>')
-  $(".entry").append('<li class="tyrionResponse">' + "@gif (search the Seven Kingdoms for gifs)"+ '</li>')
+  $(".commandList").append('<li class="tyrionResponse">' + "@gif (search the Seven Kingdoms for gifs)"+ '</li>')
+  $(".commandList").append('<li class="tyrionResponse">' + "@song (listen to the dank playlists of Westeros)"+ '</li>')
 
 
 };

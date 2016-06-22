@@ -3,13 +3,13 @@ body {
 
 #logoDiv {
   height: 6em;
-  width: 32%;
+  width: 100%;
   display: inline-block; }
 
 #logo {
   height: 6em;
   width: 4em;
-  margin-left: 40em;
+  margin-left: 45%;
   display: inline-block; }
 
 .headerwords {
@@ -17,17 +17,20 @@ body {
   font-weight: 3em;
   font-size: 45px;
   color: #E2D1A9;
-  margin-left: 33%;
+  margin-left: 30%;
   margin-top: 20px;
   text-align: center;
   display: inline-block; }
 
 ul {
   list-style: none;
-  font-family: Noto sans; }
+  font-family: Roboto;
+  letter-spacing: .75px; }
 
 li {
-  list-style: none; }
+  list-style: none;
+  color: brown;
+  padding: .2em; }
 
 .hodorIcon {
   width: 5em;
@@ -44,13 +47,30 @@ li {
   overflow-y: auto; }
 
 .talktoBot {
-  margin-left: 33%;
-  width: 6em; }
+  margin-left: 43%;
+  width: 6em;
+  color: brown;
+  display: inline-block; }
+
+.submitButton {
+  font-family: Roboto;
+  letter-spacing: .75px;
+  outline: none;
+  border-radius: 2px;
+  border-style: none;
+  background-color: #D3B259;
+  color: brown;
+  display: inline-block;
+  margin-left: 400%; }
 
 .command {
+  font-family: Roboto;
+  letter-spacing: .75px;
   width: 30em;
   border-radius: 2px;
-  outline: none; }
+  outline: none;
+  color: brown;
+  border: blue 2px solid; }
 
 .commandBar {
   height: 4em;
