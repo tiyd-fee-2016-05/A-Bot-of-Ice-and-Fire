@@ -1,42 +1,21 @@
 body {
-  background-color: brown; }
-
-#logo {
-  width: 4em;
-  height: 6em;
-  margin: 5.5em .5em 1em 16em; }
-
+  background-color: #E2D1A9; }
 
 .headerwords {
-
   font-family: 'Cinzel', serif;
   font-weight: "3em";
   font-size: 45px;
-  color: #E2D1A9;
+  color: brown;
   margin-top: 10px;
   text-align: center; }
 
-.heading {
-  text-align: center;
-  font-family: Cinzel, serif;
-  color: brown;
-  size: 700; }
-
-
 ul {
-  list-style: none; }
-
-#Tyrion {
-  height: 6em;
-  width: 6em; }
-
-#userIcon {
-  height: 6em;
-  width: 6em; }
+  list-style: none;
+  font-family: Noto sans; }
 
 .headertitle {
   background-color: brown;
-  height: 2em; }
+  height: 4.5em; }
 
 .wrapper {
   margin-left: 20%;
@@ -44,28 +23,17 @@ ul {
   height: 350px;
   overflow-y: auto; }
 
-.ScreenWindow {
-  height: 850px; }
-
-
 .commandBar {
   height: 150px;
   margin-left: 20%;
   margin-right: 20%;
-  border: 3px solid gold;
   color: white; }
 
-.tyrionEntry {
-  margin-left: 150px;
-  position: absolute;
-  height: 55px;
-  color: brown; }
-
-.chatWindowentry {
-  height: 5.5em;
+.entry {
   color: white;
-  margin: 2em;
-  border: 1em; }
+  border: 1px solid #E2D1A9;
+  border-radius: 5px;
+  width: 500px; }
 
 .tyrionIcon {
   height: 80px;
@@ -95,13 +63,13 @@ ul {
   margin-right: 25%;
   margin-left: 15%;
   width: 400px;
-  background-color: gold;
+  background-color: #E2D1A9;
   border-radius: 3px;
   min-height: 90px;
   margin: 20px; }
 
 .tyrionText {
-  color: red;
+  color: brown;
   font-size: 15px;
   display: inline-block;
   width: 300px;
@@ -109,7 +77,7 @@ ul {
   z-index: 100; }
 
 .userText {
-  color: red;
+  color: brown;
   font-size: 15px;
   display: inline-block;
   width: 300px; }
