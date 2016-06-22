@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>A Bot of Ice and Fire</title>
     <link rel="stylesheet" href="bower_components/meyer-reset/stylesheets/_meyer-reset.scss">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" href ="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 
-  </head>
-  <body>
+</head>
 
+<body>
+
+
+    <div class="headerBackground">
+        <h1 class="heading">A Bot of Ice and Fire</h1>
+    </div>
     <div class="ScreenWindow">
-  <h1>A Bot of Ice and Fire</h1>
-
-<div class="chatplace">
+        <div class="chatplace">
 
 
-<!--WHERE USER'S INPUT GOES-->
+            <!--WHERE USER'S INPUT GOES-->
 
-<ul class="commandList">
-  <li class="chatWindowentry"> </li>
-</ul>
+            <ul class="commandList">
+                <li class="chatWindowentry"> </li>
+            </ul>
 
-<!--TYRION'S RESPONSES-->
-<ul class = "tyrionResponse">
-  <li class = "tyrionEntry"> </li>
-</ul>
+            <!--TYRION'S RESPONSES-->
+            <ul class="tyrionResponse">
+                <li class="tyrionEntry"> </li>
+            </ul>
+
+            <!--INPUT AND SUBMIT BUTTON-->
+
+            <div class="commandBar">
+                <form class="talktoBot">
+                    <input class="command"> </input>
+                    <input type="submit" value="Send Command" class="submitButton">
+                </form>
+            </div>
+        </div>
+    </div>
 
 
-<div class="commandBar">
-  <form class="talktoBot">
-  <input class="command"> </input>
-  <input type="submit" value="Send Command" class="submitButton">
-  </form>
-</div>
-</div>
-</div>
+    <script src="assets/js/background.js">
+    </script>
+    <script src="assets/js/help.js">
+    </script>
+    <script src="assets/js/spotify.js">
+    </script>
+    <script src="assets/js/giphy.js"></script>
+</body>
 
-<!--INPUT AND SUBMIT BUTTON-->
-
-<script src="assets/js/background.js"> </script>
-<script src="assets/js/help.js"> </script>
-<script src="assets/js/spotify.js"> </script>
-<script src="assets/js/giphy.js"></script>
-  </body>
 </html>
