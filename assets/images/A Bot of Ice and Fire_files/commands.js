@@ -113,14 +113,14 @@ $('.talktoBot').on('submit', function (e) {
     console.log("The user submitted" + commandtext)
   // console.log(commandtext);
 
-var sevenexCheck = commandtext.search("Seven blessings!");
+var helloCheck = commandtext.search("Hello!");
 
 
-if (sevenexCheck > -1){
+if (helloCheck > -1){
 
 
             $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>' +
-                                  '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "Tyrion-pic.png">' + '<div class=tyrionText>' + '<br>'+ "Seven blessings!" + '</li>')
+                                  '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "Tyrion-pic.png">' + '<div class=tyrionText>' + '<br>'+ "Hello my friend!" + '</li>')
 
 };
 

@@ -31,7 +31,7 @@ display: block;
  }
 
 .commandBar {
-  height: 150px; /* 150/16 */ /* 9.375/16 */
+  height: 100px; /* 150/16 */ /* 9.375/16 */
   width: 100%;
   border: 3px solid $goldenrod; /* 3/16 */ /* 0.188/16 */
   color: white;
@@ -56,11 +56,10 @@ margin-top: -50px; /* 150/16 */ /* 9.375/16 */
   margin-left: 320px; } /* 20/16 */
 
 .image {
-  height: 80px; /* 60/16 */ /* 3.75/16 */
-  width: 80px; /* 60/16 */ /* 3.75/16 */
+  height: 70px; /* 60/16 */ /* 3.75/16 */
+  width: 70px; /* 60/16 */ /* 3.75/16 */
   margin-left: 30px; /* 30/16 */ /* 1.875/16 */
   display: inline;
-  border:1px solid lime;
 }
 
   .userEntry {
@@ -71,11 +70,11 @@ margin-top: -50px; /* 150/16 */ /* 9.375/16 */
     padding-top: 5px; /* 10/16 */ /* 0.625/16 */
     padding-left: 10px; /* 10/16 */ /* 0.625/16 */
     margin-bottom: 45px; /* 20/16 */ /* 1.25/16 */
+    height: 50px;
   }
 
   .tyrionResponse {
     margin-right: 25%;
-
     width: 350px; /* 350/16 */ /* 21.875/16 */
     background-color: $goldenrod;
     border-radius: 5px; /* 5/16 */ /* 0.313/16 */
@@ -123,6 +122,7 @@ margin-left: 375px;
 color: $lannisterbrown;
 background-color: $goldenrod;
 margin-top: 12px;
+font-size: 20px;
   }
 
   .submitButton {
