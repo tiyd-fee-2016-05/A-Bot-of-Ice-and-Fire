@@ -33,7 +33,7 @@ console.log("@spotify is there!")
       }).done(function(json) {
             var albumURL = "http://i.imgur.com/xQHMk98.jpg/"
             $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>'+
-                                  '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "Tyrion-pic.png">' + '<div class=tyrionText>' + '<div class=tyrionText>' + "<a href=" + json.external_urls.spotify + "</a>" + "Enjoy the Sounds of Westeros.  I believe you call the service Spotify?" + "</a>" + '</div>' + '</li>')
+                                  '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "Tyrion-pic.png">' + '<div class=tyrionText>' + '<div class=tyrionText>' + "<a href=" + json.external_urls.spotify + ">" + "Enjoy the Sounds of Westeros.  I believe you call the service Spotify?" + "</a>" + '</div>' + '</li>')
           $(".commandList").append('<li class="response">');
 
         console.log(json);

@@ -13,6 +13,8 @@ var bgKeyword = commandtext.slice(11);
 
 var backgroundCheck = commandtext.search("@background");
 
+$(".wrapper").animate({ scrollTop: $(".wrapper")[0].scrollHeight}, 1000);
+
 if (backgroundCheck > -1){
   $("body").css("background-color" , bgKeyword);
 
