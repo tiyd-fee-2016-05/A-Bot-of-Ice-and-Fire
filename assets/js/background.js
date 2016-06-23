@@ -5,20 +5,21 @@ $('.talktoBot').on('submit', function (e) {
   e.preventDefault()
 
   var commandtext = $('input[class="command"]').val();
-    console.log("The user submitted" + commandtext)
 
 var bgKeyword = commandtext.slice(11);
 
-console.log("I am searching for " + bgKeyword);
 
 
 
 var backgroundCheck = commandtext.search("@background");
-  console.log(backgroundCheck);
 
 if (backgroundCheck > -1){
-console.log("@background is there!");
   $("body").css("background-color" , bgKeyword);
+
+  $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>')
+
+  $(".commandList").append('<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "tyrion-pic.png">' + '<div class=tyrionText>' +
+   "A fabulous choice!  Not quite my shade though...")
 };
 
 

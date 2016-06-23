@@ -1,4 +1,33 @@
-console.log("Spotify ready.");
+console.log("Hodor.  Hodor.");
+
+$('.talktoBot').on('submit', function (e) {
+  e.preventDefault()
+
+  var commandtext = $('input[class="command"]').val();
+    console.log("The user submitted" + commandtext)
+  // console.log(commandtext);
+
+var hodorCheck = commandtext.search("@hodor");
+  console.log(hodorCheck + ":hodorCheck");
+
+if (hodorCheck > -1){
+console.log("@hodor is there!")
+
+            $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>' +
+                                  '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "hodor-pic.png">' + '<div class=tyrionText>' +
+                                   "Hodor.  Hodor.  Hodor."+ '</div>' + '</li>')
+
+};
+
+});
+//
+// Change for change
+
+
+
+
+
+
 // $(function(){
 //   'use strict';
 //   var search

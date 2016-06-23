@@ -17,7 +17,14 @@ var spotifyCheck = commandtext.search("@song");
 if (spotifyCheck > -1){
 console.log("@spotify is there!")
 
-  $(".tyrionEntry").append('<li class="response">' + "Enjoy the Sounds of Westeros."+ '</li>')
+
+
+
+
+
+
+
+
   $.ajax({
         dataType: 'json',
         url: "https://api.spotify.com/v1/users/gameofthrones",
@@ -25,7 +32,9 @@ console.log("@spotify is there!")
 
       }).done(function(json) {
             var albumURL = "http://i.imgur.com/xQHMk98.jpg/"
-          $(".tyrionEntry").append('<li class="response">' + "<a href=" + json.external_urls.spotify + ">" + "<img src='" + albumURL + "'/>" + "</a>" + "</li>");
+            $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>'+
+                                  '<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "Tyrion-pic.png">' + '<div class=tyrionText>' + '<div class=tyrionText>' + "<a href=" + json.external_urls.spotify + "</a>" + "Enjoy the Sounds of Westeros.  I believe you call the service Spotify?" + "</a>" + '</div>' + '</li>')
+          $(".commandList").append('<li class="response">');
 
         console.log(json);
 
