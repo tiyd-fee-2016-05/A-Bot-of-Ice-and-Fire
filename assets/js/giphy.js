@@ -34,7 +34,7 @@ $.ajax({
             $(".commandList").append('<li class="userEntry userText">' + commandtext + '</li>')
 
       $(".commandList").append('<li class="tyrionResponse">' + ' <img class="tyrionIcon" src= "tyrion-pic.png">' + '<div class=tyrionText>' +
-       "Look at it go!"+ "<img class = 'image' src='" + gifUrl + "'/>" + '</li>')
+       "Look at it go!"+ "<img class ="image" src='" + gifUrl + "'/>" + '</li>')
   });
 };
 });
